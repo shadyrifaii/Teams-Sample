@@ -5,7 +5,7 @@
 <html>
   <body>
     <form>
-      <input type="radio" name="maptype" value="bing" onclick="onClick()"> Bing Maps
+      <input type="radio" name="maptype" value="bing" onclick="onClick()"> SP Online
       <br>
       <input type="radio" name="maptype" value="google" onclick="onClick()"> Google Maps
     </form>
@@ -19,9 +19,9 @@
         if (radios[0].checked) {
           microsoftTeams.settings.setSettings({
             entityID: "bing",
-            contentUrl: "https://www.bing.com/maps/embed",
-            suggestedTabName: "Bing Map",
-            websiteUrl: "https://www.bing.com/maps",
+            contentUrl: "https://softforce.sharepoint.com",
+            suggestedTabName: "SP Online",
+            websiteUrl: "https://softforce.sharepoint.com",
             removeUrl: window.location.origin + "/tabremove.html"
           });
         } else {
